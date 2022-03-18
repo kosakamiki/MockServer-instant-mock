@@ -1,0 +1,3 @@
+api:
+  /mock/users/@get:
+    parser: parser-default.yml

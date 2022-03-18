@@ -1,0 +1,104 @@
+- if:
+    query:
+      group: team-a
+  then:
+    status: 200
+    headers:
+      Content-Type: application/json
+    body: team-a.json
+
+- if:
+    query:
+      group: team-b
+  then:
+    status: 200
+    headers:
+      Content-Type: application/json
+    body: team-b.json
+
+- if:
+    query:
+      group: team-pdf
+  then:
+    status: 200
+    headers:
+      Content-Type: application/pdf
+    body: PDFファイルだお.pdf
+
+- if:
+    query:
+      group: team-sheet
+  then:
+    status: 200
+    headers:
+      Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+    body: test.xlsx
+    
+- if:
+    query:
+      group: team-csv
+  then:
+    status: 200
+    headers:
+      Content-Type: text/csv
+    body: hell.csv
+
+- if:
+    query:
+      group: team-html
+  then:
+    status: 200
+    headers:
+      Content-Type: text/html
+    body: test.html
+
+- if:
+    query:
+      group: team-css
+  then:
+    status: 200
+    headers:
+      Content-Type: text/css
+    body: test.css
+
+- if:
+    query:
+      group: team-text
+  then:
+    status: 200
+    headers:
+      Content-Type: text/plain
+    body: hello.txt
+
+- if:
+    query:
+      group: team-jpeg
+  then:
+    status: 200
+    headers:
+      Content-Type: image/jpeg
+    body: テスト.jpg
+
+- if:
+    query:
+      group: team-png
+  then:
+    status: 200
+    headers:
+      Content-Type: image/png
+    body: テスト.png
+
+- if:
+    query:
+      group: team-bmp
+  then:
+    status: 200
+    headers:
+      Content-Type: image/bmp
+    body: テスト.bmp
+
+- then:
+    status: 200
+    headers:
+      Content-Type: application/json
+    body: all.json
